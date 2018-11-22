@@ -1,0 +1,17 @@
+*{margin: 0px; padding: 0px;}
+.container-fluid{background-image: url("la ca pics/mac.png") ;
+ color: #fff;
+background-size: cover;
+background-repeat: no-repeat;
+ 
+}
+.mynav{background-image: url("la ca pics/2.jpg") ;
+ color: #fff;
+}
+.container-fluid img{margin: auto;}
+ }
+.food{background-image: url("la ca pics/2.jpg") ;
+ color: red ;
+}
+
+

@@ -1,0 +1,61 @@
+.top-bar{background-color:#f16420;
+              padding:5px 0;
+}
+.soical-icon{margin-right:5px;
+
+}
+.contact-info{
+                    color:#fff;
+
+}
+
+.img{
+	height:110px;
+	}
+ .my-menu
+           {margin-top:27px;}
+ 
+ .my-menu .navbar-default
+                            { background:none; border:none;}
+ 
+ .my-menu .navbar-nav .active a, .my-menu .navbar-nav .active a:hover
+                                     {background-color:#f16420;
+									 color:#fff;
+									 border-radius:5px;
+ }
+ .my-menu .navbar-nav li a:hover
+                                        {background-color:#f16420;
+										color:#fff;
+										 border-radius:5px;
+	}
+.courses{
+	           background:radial-gradient(circle,#009cde,#003087);
+			   padding:25px 0;
+}
+.courses h1{color:#fff;}
+.courses .top_margin{margin-top:20px 0;}
+
+
+.footer{background:#333333;
+            padding:20px 0;
+}
+.footer p{
+				color:#fff; 
+				margin-top:10px;
+				margin-bottom:5px;
+	}
+	.footer h3{
+				color:#fff; 
+				
+	}
+.footer h3{
+				color:#fff; 
+				
+	}
+	.footer h3{
+				color:#fff; 
+				
+	}
+.footer ul li a{color:#fff;
+                   font-size:15px;
+ }

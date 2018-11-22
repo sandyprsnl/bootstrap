@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap_forms</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+	<style type="text/css">
+body{background-image: url("la ca pics/background.png");
+background-repeat: no-repeat;
+background-size: cover;
+
+     
+}		
+
+#form{
+	border-width:10px;
+	border-radius: 5px;
+	border-style: inset;
+	    margin:auto; 
+	    padding: 5px 40px 40px 40px;
+	    
+
+}
+.text-center{color: white;
+	         font-family: Agency FB;
+	         font-weight: bold;
+	         border-bottom: 10px solid white;
+}
+
+
+} 
+.heading{font-size: 20px !important;
+	 color:white;
+	 font-weight: bold;
+	 text-shadow: 2px 2px 4px black;
+}
+
+.text{font-size: 20px;
+	color:white;
+	 font-weight: bold;
+	text-shadow: 2px 2px 4px black;
+
+	 border:none;
+}
+.font{font-size: 20px !important;
+	 font-weight: bold;
+}
+.font:hover{box-shadow: 5px 5px 10px 5px blue;}
+input{background:transparent !important;
+	border:none !important;
+	color:white !important;
+	border-bottom: 2px solid !important ;
+}
+select{background:none !important;
+	border:none !important;
+	color:white !important;
+	border-bottom: 2px solid !important ;
+	-webkit-appearance:button;
+}
+textarea{background:none !important;
+	border:none !important;
+	color:white !important;
+	border-bottom: 2px solid !important ;
+
+}
+</style>
+
+
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			
+			<div class=" col-md-6 col-md-offset-3" id="form">
+				<marquee behavior="slide" ><h1 class="text-center">Registration Form</h1>
+
+				
+
+<form class="form"  onsubmit="return validation()">
+					<div class="form-group text">
+						<label for="Username"> Username:</label>
+						<input type="text" name="Username" class="form-control font " id="Username" placeholder="Enter Username">
+						<span id="spanuser" class="text-danger"></span>
+					</div>
+
+					<div class="form-group text">
+						<label for="Email"> Email:</label>
+						<input type="Email" name="Email" class="form-control font" id="Email" placeholder="Enter Email">
+						<span id="spanEmail" class="text-danger"></span>
+					</div>
+
+					<div class="form-group text">
+						<label for="Password"> Password:</label>
+						<input type="Password" name="Password" class="form-control font" id="Password" placeholder="Enter Password">
+						<span id="spanPassword" class="text-danger"></span>
+					</div>
+
+					<div class="form-group text">
+						<label for="Mobile" > Mobile:</label>
+						<input type="text" name="Mobile" class="form-control font" id="Mobile" placeholder="Enter Mobile" "title="should be in number">
+						<span id="spanMobile" class="text-danger"></span>
+					</div>
+
+					<div class="form-group text">
+						<label for="birth"> Date of birth:</label>
+						<input type="date" name="Date of birth" class="form-control font" id="birth" placeholder="Enter Date of birth">
+
+						<span id="spanbirth" class="text-danger"></span>
+					</div>
+
+					<div class="form-group text">
+						<label for="gender"  > Select gender</label>
+						<select class="form-control  font " id="gender">
+							<optgroup label="Select gender"  >
+								<option>Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+							</optgroup>
+						</select>
+						
+					</div>
+
+					<div class="form-group  text">
+						<label for="Address"> Address:</label>
+						<textarea class="form-control font"  id="Address" placeholder="Enter Address"></textarea>
+						<span id="spanAddress" class="text-danger"></span>
+					</div>
+
+					<div class="form-group  text">
+						<button type="submit" class="form-control btn btn-primary  font"> Submit</button>
+						<br>
+						<br>
+						<button type="reset" class="form-control btn btn-success font"> Reset</button>
+						
+					</div>
+
+				</form>
+				</marquee>
+				
+			</div>
+			
+		</div>
+
+</div>
+
+<br>
+                        <!-- script -->
+<script type="text/javascript">
+	function validation()
+	{
+username=document.getElementById("Username").value;
+email=document.getElementById("Email").value;
+password=document.getElementById("Password").value;
+mobile=document.getElementById("Mobile").value;
+dob=document.getElementById("birth").value;
+
+address=document.getElementById("Address").value;
+
+if(username=="")
+{
+	document.getElementById("spanuser").innerHTML=" **pless fill username";
+	return false;
+}
+
+if((username.length<=2)||(username.length>=20))
+{
+	document.getElementById("spanuser").innerHTML=" **username length should be greater<br> then 2 and less then 20";
+	return false;
+}
+
+if(!isNaN(username))
+	{
+	document.getElementById("spanuser").innerHTML=" **only charectr are allowed";
+	return false;
+}
+
+if(email=="")
+{
+	document.getElementById("spanEmail").innerHTML=" **pless fill Email";
+	return false;
+}
+if(password=="")
+{
+	document.getElementById("spanPassword").innerHTML=" **pless fill Password";
+	return false;
+}
+if(mobile=="")
+{
+	document.getElementById("spanMobile").innerHTML=" **pless fill Mobile";
+	return false;
+}
+
+if(isNaN(mobile))
+{
+	document.getElementById("spanMobile").innerHTML=" **plzz fill only number";
+	return false;
+}
+
+if(dob=="")
+{
+	document.getElementById("spanbirth").innerHTML=" **pless fill birth";
+	return false;
+}
+if(address=="")
+{
+	document.getElementById("spanAddress").innerHTML=" **pless fill Address";
+	return false;
+}
+
+return true;
+	}
+
+
+
+
+
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script  src="js/jquery.min.js"></script>
+</body>
+</html>

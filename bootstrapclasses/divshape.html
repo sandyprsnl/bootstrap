@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css">
+ul li{
+	 list-style: none;
+	 border-top:1px solid ;
+	 border-bottom:1px solid ;
+	 margin:-1px 0;
+	 transition: 0.5s;
+}	
+ul li a{
+	text-decoration: none;
+     display: block;
+     border-right:1px solid;
+}
+ul li a span{
+    position: relative;
+    display: inline-block;
+}
+ul li a span:nth-child(1){
+	width: 30px;
+	text-align: center;
+border-left: 1px solid;
+border-right: 1px solid;
+padding:10px;
+transition: 0.5s;
+color: red;
+}
+ul li:hover a span:nth-child(1){
+color: blue;
+}
+
+ul li a span:nth-child(1).fas{
+transition: 0.5s;	
+}
+
+ul li:hover a span:nth-child(1){
+transform: rotate(360deg);
+}
+
+	</style>
+
+
+</head>
+<body>
+<div class="row">
+<ul>
+	<li>
+		<a href="#">
+			<span class="fas fa-home"></span>
+			<span>home</span>
+			
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<span class="fas fa-user"></span>
+			<span>profile</span>
+			
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<span class="far fa-thumbs-up"></span>
+			<span>like</span>
+			
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<span class="fab fa-blogger"></span>
+			<span>blog</span>
+			
+		</a>
+	</li>
+</ul>
+
+
+</div>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script  src="js/jquery.min.js"></script>
+</body>
+</html>
